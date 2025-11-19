@@ -5,7 +5,7 @@ const Project = () => {
     <div className='h-fit w-full bg-[#212529] p-2 '>
         <p className='text-red-500 text-center text-2xl '>Visit My Projests And Keep your Feed Back</p>
         <h1 className='text-4xl text-white text-center font-bold'>My Projects</h1>
-        <div className='grid grid-cols-1 gap-3 pt-6'>
+        <div className='grid grid-cols-1 gap-3 pt-6 md:grid-cols-2 lg:grid-cols-3'>
             <div className='w-full h-96 rounded-xl p-4 bg-gray-700'> 
                 <div className=' w-full h-64 rounded-2xl '>
                     <img src="Ip address tracker.png" alt="" className='h-64 rounded-2xl ' />

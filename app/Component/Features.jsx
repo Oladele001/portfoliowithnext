@@ -2,11 +2,11 @@ import React from "react";
 
 const Features = () => {
   return (
-    <div className="w-full h-[52rem] bg-[#212529] text-center">
+    <div className="w-full h-fit bg-[#212529] text-center">
       <p className="text-red-600 text-xl font-medium ">Features</p>
       <h1 className="text-gray-300 text-4xl font-bold">Services</h1>
-      <div className="flex flex-col gap-3 p-4 ">
-        <div className="w-full h-48 flex flex-col gap-3 rounded-lg bg-gray-900 text-justify p-6 pt-6  ">
+      <div className="grid grid-cols-1 gap-3 p-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="w-fit h-fit flex flex-col gap-3 rounded-lg bg-gray-900 text-justify p-6 pt-6  ">
           <div>🙎‍♂️</div>
           <h1 className="text-white text-3xl">Web Development</h1>
           <p className="text-white">
