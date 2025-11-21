@@ -1,5 +1,6 @@
+"use client"
+import { motion } from "motion/react"
 import React from "react";
-import { motion } from "framer-motion"
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareTwitter } from "react-icons/fa6";
@@ -7,9 +8,6 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
 
-    const bounce = {
-        whileHover:{scale : 1.2}, whileTap:{scale: 0.9}
-    }
 
   return (
     <div className="text-center w-full p-2 h-fit bg-[#212529]">
@@ -17,10 +15,10 @@ const Contact = () => {
       <h1 className="text-gray-300 text-2xl">Contact With Me</h1>
       <div className="md:flex md:flex-row md:gap-12 md:p-20">
         <div className="w-fit h-fit p-4 bg-gray-800 md:w-1/2 md:pl-16 md:pr-16">
-          <div className="w-full h-44 mt-6 mb-8 m-auto rounded-2xl overflow-hidden cursor-pointer">
-            <motion.img whileHover={bounce} whileTap={bounce}
+          <div className="w-full h-48 mt-6 mb-8 m-auto rounded-2xl overflow-hidden cursor-pointer">
+            <motion.img whileHover={{scale: 1.1}} whileTap={{scale : 0.9}}
               src="https://mahmoudnabhan.com/assets/images/contact/contact1.png"
-              alt="" className="w-full  h-44 rounded-2xl object-cover  "
+              alt="" className="w-full  h-48 rounded-2xl object-cover duration-300 "
             />
           </div>
           <div className="w-full h-fit text-justify">
@@ -54,12 +52,13 @@ const Contact = () => {
             </div>
             <div>
             <label htmlFor="" className="text-gray-400 font-light">Email</label> <br />
-            <input type="emial" placeholder="your emial address" className=" w-full h-11 p-2 text-gray-300 mt-3.5 bg-black" />
+            <input type="email" placeholder="your emial address" className=" w-full h-11 p-2 text-gray-300 mt-3.5 bg-black" />
             </div>
             <div>
             <label htmlFor="" className="text-gray-400 font-light">Your Messages</label> <br />
             <textarea name="" id="" className="bg-black mt-3.5 w-full h-fit p-2 text-gray-300" ></textarea>
             </div>
+            <button className="text-red-600 text-2xl text-center bg-black h-14 rounded-2xl cursor-pointer mt-7">Send Message →</button>
             </form>
         </div>
       </div>
