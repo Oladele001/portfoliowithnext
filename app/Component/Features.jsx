@@ -1,8 +1,14 @@
+"use client"
 import React from "react";
+import { motion } from "motion/react";
 
 const Features = () => {
   return (
-    <div className="w-full h-fit bg-[#212529] text-center">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="w-full h-fit bg-[#212529] text-center">
       <p className="text-red-600 text-xl font-medium ">Features</p>
       <h1 className="text-gray-300 text-4xl font-bold">Services</h1>
       <div className="grid grid-cols-1 gap-3 p-4 md:grid-cols-2 lg:grid-cols-3">
@@ -18,18 +24,19 @@ const Features = () => {
           <div>🙎</div>
           <h1 className="text-white text-2xl">MobileApp Development</h1>
           <p className="text-white leading-relaxed text-xl ">
-             Building cross-platform mobile applications for iOS and Android.
+            Building cross-platform mobile applications for iOS and Android.
           </p>
         </div>
         <div className="w-fit h-fit flex flex-col gap-3 rounded-lg bg-gray-900 text-justify p-6 pt-6 md:pl-10 md:pr-10 md:pb-10  ">
           <div>🙅‍♂️</div>
           <h1 className="text-white text-3xl">Software Consulting</h1>
           <p className="text-white">
-           Providing expert guidance and solutions for software development projects.
+            Providing expert guidance and solutions for software development
+            projects.
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

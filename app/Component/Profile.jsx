@@ -1,4 +1,6 @@
+import { motion } from "motion/react"
 import React from 'react'
+// import { Typewriter } from "motion"
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareTwitter } from "react-icons/fa6";
@@ -14,7 +16,12 @@ const Profile = () => {
       <div className='h-screen w-full bg-[#212529] md:w-1/2 md:h-fit text-white mt-9 pt-5 p-2 gap-5 flex flex-col md:p-4 md:pr-10'>
         <h2 className='mt-6 text-xl font-medium'>Welcome to my digital space.</h2>
         <h1 className='text-2xl font-bold'>Hi, I’m <span className='text-red-600'>QOzeem AbdulRahman</span> <br />
-          a Software Developer.</h1>
+         {/* <Typewriter 
+              text="a Software Developer.!" 
+              speed={60} 
+            />  */}
+            a software Developer
+            </h1>
           <p className='text-gray-400 text-lg'>Through my experience in web and mobile development, I've gained proficiency in full-stack development, delivering projects from concept
              to deployment with a strong emphasis on performance and scalability.</p>
              <div className='mt-11 flex flex-col gap-2'>
@@ -27,6 +34,11 @@ const Profile = () => {
               </div>
              </div>
       </div>
+      {/* <motion.div
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+/> */}
     </div>
     </div>
   )
