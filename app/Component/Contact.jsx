@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="text-center w-full p-2 h-fit bg-[#212529]">
+    <div className="text-center w-full p-2 h-fit bg-[#212529]" id="contact">
       <p className="text-red-500 text-sm">Contact</p>
       <h1 className="text-gray-300 text-2xl">Contact With Me</h1>
       <div className="md:flex md:flex-row md:gap-12 md:p-20">

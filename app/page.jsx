@@ -1,19 +1,18 @@
-import React from "react";
+import React from 'react'
 import Profile from './Component/Profile'
 import Features from './Component/Features'
 import Project from './Component/Project'
 import Contact from './Component/Contact'
 
-const page = () => {
+const Page = () => {
   return (
-    <>
-    <Profile />
-    <Features />
-    <Project />
-    <Contact />
-    </>
+    <div>
+        <Profile />
+        <Features />
+        <Project />
+        <Contact />
+    </div>
   )
-  ;
-};
+}
 
-export default page;
+export default Page
