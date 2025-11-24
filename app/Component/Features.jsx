@@ -8,7 +8,7 @@ const Features = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="w-full h-fit bg-[#212529] text-center">
+      className="w-full h-fit bg-[#212529] text-center md:pt-14 md:pb-10">
       <p className="text-red-600 text-xl font-medium ">Features</p>
       <h1 className="text-gray-300 text-4xl font-bold">Services</h1>
       <div className="grid grid-cols-1 gap-3 p-4 md:grid-cols-2 lg:grid-cols-3">

@@ -8,12 +8,12 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Profile = () => {
   return (
-    <div className='bg-gray-800 w-full h-full md:mt-10'>
-      <div className=' border-2 border-black flex flex-col  md:flex-row-reverse md:gap-3 lg:pl-10 lg:pr-10'>
-      <div className='h-fit w-fit bg-red-500 mt-9 md:w-1/2 md:h-1/2'>
-        <img src="master003.jpg" alt="" className='w-fit h-fit md:h-2/3' />
+    <div className=' bg-[#212529] w-full h-full md:mt-10 md:h-2/3'>
+      <div className=' border-2 border-black flex flex-col  md:flex-row-reverse md:gap-6 md:justify-center lg:gap-11 lg:pl-10 lg:pr-10'>
+      <div className='h-fit w-fit bg-red-500 mt-9 md:w-2/5 md:h-[32rem]'>
+        <img src="master003.jpg" alt="" className='w-fit h-fit md:w-full md:h-[32rem] object-cover' />
       </div>
-      <div className='h-screen w-full bg-[#212529] md:w-1/2 md:h-fit text-white mt-9 pt-5 p-2 gap-5 flex flex-col md:p-4 md:pr-10'>
+      <div className='h-screen w-full bg-[#212529] md:w-1/2 md:h-[32rem] text-white mt-9 pt-5 p-2 gap-5 flex flex-col md:p-4 md:pr-10'>
         <h2 className='mt-6 text-xl font-medium'>Welcome to my digital space.</h2>
         <h1 className='text-2xl font-bold'>Hi, I’m <span className='text-red-600'>QOzeem AbdulRahman</span> <br />
          {/* <Typewriter 
@@ -34,11 +34,6 @@ const Profile = () => {
               </div>
              </div>
       </div>
-      {/* <motion.div
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true }}
-/> */}
     </div>
     </div>
   )
