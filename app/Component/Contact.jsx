@@ -68,7 +68,7 @@ const Contact = () => {
     e.preventDefault();
     if (validate()) {
       const whatsappNumber = "2347037023820";
-      const text = `Name: ${name}%0aPhone: ${phone}%0aEmail: ${email}%0aMessage: ${message}`;
+      const text = `Name: ${name}Phone: ${phone}Email: ${email}Message: ${message}`;
       const encodedText = encodeURIComponent(text);
       const whatsappURL = `https://wa.me/${'+2347037023820'}?text=${encodedText}`;
       window.open(whatsappURL, "_blank");
