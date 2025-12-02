@@ -64,7 +64,6 @@ const Project = () => {
             }}
             className="w-full rounded-xl p-6 bg-gray-700 shadow-xl hover:shadow-2xl transition-shadow"
           >
-            {/* Image */}
             <div className="w-full h-64 rounded-2xl overflow-hidden cursor-pointer">
               <motion.img
                 whileHover={{ scale: 1.1 }}
@@ -75,7 +74,6 @@ const Project = () => {
               />
             </div>
 
-            {/* THIS IS THE ONLY PART THAT CHANGED */}
             {project.link ? (
               <a
                 href={project.link}
@@ -90,7 +88,6 @@ const Project = () => {
                 {project.title}
               </p>
             )}
-            {/* END OF CHANGE */}
 
             <p className="text-white text-sm mt-3 leading-relaxed">{project.desc}</p>
           </motion.div>

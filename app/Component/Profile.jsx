@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion"; // you already have it
+import { motion } from "framer-motion"; 
 import React, { useState, useEffect } from 'react';
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram, FaSquareTwitter, FaLinkedin } from "react-icons/fa6";
@@ -14,10 +14,8 @@ const Typewriter = ({ text = "software Developer" }) => {
 
     const type = () => {
       if (!isDeleting && displayText === fullText) {
-        // finished typing → wait 2 seconds then delete
         timer = setTimeout(() => setIsDeleting(true), 2000);
       } else if (isDeleting && displayText === '') {
-        // finished deleting → start typing again
         setIsDeleting(false);
       }
 
@@ -26,7 +24,7 @@ const Typewriter = ({ text = "software Developer" }) => {
           ? fullText.substring(0, displayText.length - 1)
           : fullText.substring(0, displayText.length + 1)
         );
-      }, isDeleting ? 50 : 100); // delete faster, type slower
+      }, isDeleting ? 50 : 100); 
     };
 
     timer = setTimeout(type, 100);
@@ -58,7 +56,7 @@ const Profile = () => {
           </h1>
 
           <p className='text-gray-400 text-lg leading-relaxed'>
-            Through my experience in web and mobile development, I've gained proficiency in full-stack development, 
+            Through my experience in web development, I've gained proficiency in full-stack development, 
             delivering projects from concept to deployment with a strong emphasis on performance and scalability.
           </p>
 

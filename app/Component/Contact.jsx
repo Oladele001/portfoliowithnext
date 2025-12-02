@@ -1,18 +1,17 @@
 "use client";
-import { motion } from "framer-motion"; // Fixed import
+import { motion } from "framer-motion"; 
 import React, { useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
-// Animation variants (easy to understand)
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.3, // each part waits 0.3s after the previous one
+      staggerChildren: 0.3, 
     }
   }
 };
@@ -27,16 +26,13 @@ const childVariants = {
 };
 
 const Contact = () => {
-  // Form state
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // Errors state
   const [errors, setErrors] = useState({});
 
-  // Validation function
   const validate = () => {
     const newErrors = {};
     if (!name.trim()) {
@@ -63,16 +59,16 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Handle form submit
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
       const whatsappNumber = "2347037023820";
-      const text = `Name: ${name}Phone: ${phone}Email: ${email}Message: ${message}`;
+      const text = `Name: ${name} , Phone: ${phone} , Email: ${email} , Message: ${message}`;
       const encodedText = encodeURIComponent(text);
       const whatsappURL = `https://wa.me/${'+2347037023820'}?text=${encodedText}`;
       window.open(whatsappURL, "_blank");
-      // Reset form after submission
+     
       setName("");
       setPhone("");
       setEmail("");
@@ -83,7 +79,6 @@ const Contact = () => {
 
   return (
     <div className="text-center w-full p-2 pt-5 h-fit bg-[#212529]" id="contact">
-      {/* Title animation */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -94,7 +89,6 @@ const Contact = () => {
         <h1 className="text-gray-300 text-3xl md:text-4xl font-bold mt-2">Contact With Me</h1>
       </motion.div>
 
-      {/* Main content with stagger effect */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -102,7 +96,6 @@ const Contact = () => {
         viewport={{ once: true, margin: "-100px" }}
         className="pt-8 md:flex md:flex-row md:gap-12 md:p-20 max-w-7xl mx-auto"
       >
-        {/* Left side: Info + Social */}
         <motion.div
           variants={childVariants}
           className="w-full h-fit p-4 bg-gray-800 rounded-xl shadow-xl md:w-1/2 md:pl-16 md:pr-16"
@@ -133,7 +126,6 @@ const Contact = () => {
           </div>
         </motion.div>
 
-        {/* Right side: Form */}
         <motion.div
           variants={childVariants}
           className="rounded-2xl border-2 h-fit mt-8 md:mt-0 md:w-1/2"
