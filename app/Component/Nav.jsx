@@ -44,6 +44,9 @@ const Nav = () => {
           <a href="#contact" className="hover:text-amber-300 transition">
             Contact
           </a>
+          <a href="#project" className="hover:text-amber-300 transition">
+            Project
+          </a>
           <a href="#services" className="hover:text-amber-300 transition">
             Services
           </a>
@@ -88,6 +91,12 @@ const Nav = () => {
               className="cursor-pointer hover:text-amber-300 transition"
             >
               Contact
+            </div>
+            <div
+              onClick={() => handleMobileLinkClick("project")}
+              className="cursor-pointer hover:text-amber-300 transition"
+            >
+              Project
             </div>
             <a
               href=""

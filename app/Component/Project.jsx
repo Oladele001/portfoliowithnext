@@ -8,7 +8,7 @@ const Project = () => {
       <p className="text-red-500 text-center text-xl font-light">
         Visit My Projects And Keep your Feedback
       </p>
-      <h1 className="text-4xl text-white mt-4 text-center font-bold">
+      <h1 className="text-4xl text-white mt-4 text-center font-bold" id="project">
         My Projects
       </h1>
 
