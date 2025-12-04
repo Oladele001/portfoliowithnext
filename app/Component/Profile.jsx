@@ -47,7 +47,7 @@ const Profile = () => {
           <img src="ayo.jpg" alt="QOzeem AbdulRahman" className='w-full h-[28rem] md:h-[32rem] object-cover' />
         </div>
 
-        <div className='w-full bg-[#212529] md:w-1/2 md:h-[32rem] text-white pt-5 p-4 gap-6 flex flex-col'>
+        <div className='w-full bg-[#212529] md:w-1/2 md:h-[32rem] md:mt-10 text-white pt-5 p-4 gap-6 flex flex-col'>
           <h2 className='mt-6 text-xl font-medium'>Welcome to my digital space.</h2>
           
           <h1 className='text-3xl md:text-4xl font-bold leading-tight'>
@@ -61,8 +61,8 @@ const Profile = () => {
           </p>
 
           <div className='mt-11'>
-            <p className='mb-3 text-sm'>find with me</p>
-            <div className='flex gap-4'>
+            <p className='mb-3 text-sm md:mt-5'>find with me</p>
+            <div className='flex gap-4 md:mt-8'>
               <a href="https://www.facebook.com/profile.php?id=61576382096785" target="_blank" className='size-12 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-gray-800 transition'>
                 <FaFacebook className='size-6' />
               </a>
