@@ -50,7 +50,12 @@ const Nav = () => {
           <a href="#services" className="hover:text-amber-300 transition">
             Services
           </a>
-          <a href="" className="hover:text-amber-300 transition">
+          <a 
+            href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:092090b5-f721-4225-933e-ec572b471b14" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-amber-300 transition"
+          >
             Resume
           </a>
         </div>
@@ -93,6 +98,7 @@ const Nav = () => {
               Contact
             </div>
             <div
+            
               onClick={() => handleMobileLinkClick("project")}
               className="cursor-pointer hover:text-amber-300 transition"
             >

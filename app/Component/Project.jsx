@@ -40,6 +40,12 @@ const Project = () => {
             link: "https://advice-generator-nftn.vercel.app/"
           },
           { 
+            img: "moh-touch.png", 
+            title: "Moh_touch Beauty Arena", 
+            desc: "This is moh_touch beauty arena build with next and tailwindcss",
+            link: "https://moh-touch.vercel.app/"
+          },
+          { 
             img: "fifth project.png", 
             title: "Age Calculator", 
             desc: "This is Age calculator build with html tailwind and Javascript",

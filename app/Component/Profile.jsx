@@ -51,7 +51,7 @@ const Profile = () => {
           <h2 className='mt-6 text-xl font-medium'>Welcome to my digital space.</h2>
           
           <h1 className='text-3xl md:text-4xl font-bold leading-tight'>
-            Hi, I’m <span className='text-red-600'>QOzeem AbdulRahman</span> <br className="md:hidden" />
+            Hi, I’m <span className='text-yellow-500'>QOzeem AbdulRahman</span> <br className="md:hidden" />
             a <Typewriter text="software Developer ." />
           </h1>
 
