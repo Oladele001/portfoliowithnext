@@ -66,7 +66,7 @@ const Contact = () => {
       const whatsappNumber = "2347037023820";
       const text = `Name: ${name} , Phone: ${phone} , Email: ${email} , Message: ${message}`;
       const encodedText = encodeURIComponent(text);
-      const whatsappURL = `https://wa.me/${'+2347037023820'}?text=${encodedText}`;
+      const whatsappURL = `https://wa.me/+${whatsappNumber}?text=${encodedText}`;
       window.open(whatsappURL, "_blank");
      
       setName("");
@@ -111,11 +111,11 @@ const Contact = () => {
             <p className="text-gray-500 mt-3">Software Developer.</p>
 
             <p className="text-gray-500 mt-3 text-lg font-light">
-              I'm always open to networking and discussing potential
+              I&apos;m always open to networking and discussing potential
               collaborations. Connect with me through this form or find me on.
             </p>
-            <p className="text-gray-500 mt-3">Phone: <span className="text-gray-300 text-sm">+234 7037023820</span></p>
-            <p className="text-gray-500 mt-2">Email: <span className="text-gray-300 text-sm">abdulrahmanqozeem15@gmail.com</span></p>
+            <p className="text-gray-500 mt-3">Phone: <a href="tel: +2347037023820" className="text-gray-300 text-sm">+234 7037023820</a></p>
+            <p className="text-gray-500 mt-2">Email: <a href="mailto: abdulrahmanqozeem15@gmail.com" className="text-gray-300 text-sm">abdulrahmanqozeem15@gmail.com</a></p>
             <p className="text-gray-500 mt-6 font-medium">FIND WITH ME</p>
             <div className='flex gap-3 mt-6 text-white'>
               <button className='size-10 bg-gray-950 rounded-lg items-center flex justify-center hover:bg-gray-700 transition'><a href="https://www.facebook.com/profile.php?id=61576382096785"><FaFacebook className='size-6' /></a></button>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { IoReorderThree, IoCloseSharp } from "react-icons/io5";
+import Image from 'next/image';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,9 +27,11 @@ const Nav = () => {
       <nav className="h-14 w-full bg-[#343a40] fixed top-0 text-gray-300 flex justify-between items-center p-4 pl-4 pr-8 z-50">
         <div className="flex items-center gap-2">
           <div className="size-10 rounded-2xl flex items-start justify-start">
-            <img
-              src="ayo.jpg"
+            <Image
+              src="/ayo.jpg"
               alt="Qozeem AbdulRahman"
+              width={40}
+              height={40}
               className="size-10 rounded-2xl border-2 border-amber-300 object-cover"
             />
           </div>
@@ -68,9 +71,11 @@ const Nav = () => {
       {isOpen ? (
         <div className="fixed top-0 left-0 w-2/3 h-full bg-black text-white font-bold z-100 flex flex-col duration-300 ease-in">
           <div className="flex items-center gap-3 pt-5 px-6">
-            <img
-              src="ayo.jpg"
+            <Image
+              src="/ayo.jpg"
               alt="Qozeem AbdulRahman"
+              width={40}
+              height={40}
               className="size-10 rounded-2xl border-2 border-amber-300 object-cover"
             />
             <div className="leading-tight">

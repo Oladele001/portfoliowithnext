@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "framer-motion"; 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram, FaSquareTwitter, FaLinkedin } from "react-icons/fa6";
 
@@ -44,7 +44,7 @@ const Profile = () => {
     <div className='bg-[#212529] w-full h-full md:mt-10 md:h-2/3' id="about">
       <div className='flex flex-col md:flex-row-reverse md:gap-6 md:justify-center lg:gap-11 lg:pl-10 lg:pr-10'>
         <div className='h-[28rem] w-fit bg-red-500 mt-9 md:w-2/5 md:h-[32rem]'>
-          <img src="ayo.jpg" alt="QOzeem AbdulRahman" className='w-full h-[28rem] md:h-[32rem] object-cover' />
+          <Image src="/ayo.jpg" alt="QOzeem AbdulRahman" width={500} height={500} className='w-full h-[28rem] md:h-[32rem] object-cover' />
         </div>
 
         <div className='w-full bg-[#212529] md:w-1/2 md:h-[32rem] md:mt-10 text-white pt-5 p-4 gap-6 flex flex-col'>
@@ -56,7 +56,7 @@ const Profile = () => {
           </h1>
 
           <p className='text-gray-400 text-lg leading-relaxed'>
-            Through my experience in web development, I've gained proficiency in full-stack development, 
+            Through my experience in web development, I&apos;ve gained proficiency in full-stack development, 
             delivering projects from concept to deployment with a strong emphasis on performance and scalability.
           </p>
 
