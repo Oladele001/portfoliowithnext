@@ -28,7 +28,7 @@ const Nav = () => {
         <div className="flex items-center gap-2">
           <div className="size-10 rounded-2xl flex items-start justify-start">
             <Image
-              src="/ayo.jpg"
+              src="/abdulrahman.jpeg"
               alt="Qozeem AbdulRahman"
               width={40}
               height={40}
